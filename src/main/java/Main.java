@@ -10,11 +10,7 @@ public class Main {
         if (input.equals("exit")){
         break;
         }
-        else {
-            System.out.println(command + ": command not found");
-        }
-
-
+        System.out.println(command + ": command not found");
       }
     }
 }
