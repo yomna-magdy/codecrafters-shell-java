@@ -10,6 +10,9 @@ public class Main {
         if (command.equals("exit")){
         break;
         }
+        if(command.StartsWith("echo")){
+            println(command);
+        }
         System.out.println(command + ": command not found");
       }
     }
