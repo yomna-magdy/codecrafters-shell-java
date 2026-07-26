@@ -10,10 +10,12 @@ public class Main {
         if (command.equals("exit")){
         break;
         }
-        if(command.StartsWith("echo")){
+        else if(command.StartsWith("echo")){
             System.out.println(command.substring(5));
         }
-        System.out.println(command + ": command not found");
-      }
+        else {
+            System.out.println(command + ": command not found");
+             }
+     }
     }
 }
