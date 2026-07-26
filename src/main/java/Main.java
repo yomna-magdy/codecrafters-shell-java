@@ -9,13 +9,26 @@ public class Main {
 
         System.out.print("$ ");
         String command = scanner.nextLine();
+
+        //exit builtin code
         if (command.equals("exit")){
         break;
-        } else if(command.startsWith("echo")){
+        }
+
+        //echo biultin code
+        else if(command.startsWith("echo")){
             System.out.println(command.substring(5));
-        } else if (command.startsWith("type")) {
-            if(command == "echo" || command == "exit"){
+        }
+
+
+        //type built in code
+        else if (command.startsWith("type")) {
+
+            //if the command equals to a builtin command
+            if(command.equals("exit")  || command.equals("echo") ){
             System.out.println(command.substring(5) + " is a shell builtin");}
+
+            //if the command doesn't equal a builtin command
             else {
                 System.out.println(command.substring(5) + " command not found");
             }
