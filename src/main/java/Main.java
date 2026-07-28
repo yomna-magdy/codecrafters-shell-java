@@ -14,7 +14,7 @@ public class Main {
              String command = input;
          }
          else {
-             String command = input.Substring(0,input.indexOf(""));
+             String command = input.substring(0,input.indexOf(""));
          }
 
 
