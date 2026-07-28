@@ -15,7 +15,7 @@ public class Main {
              command = input;
          }
          else {
-             command = input.substring(0, input.indexOf(" "));
+             command = input.substring(5).trim();
          }
 
 
