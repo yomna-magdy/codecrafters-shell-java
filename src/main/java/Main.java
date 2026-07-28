@@ -35,12 +35,12 @@ public class Main {
 
             //if the command equals to a builtin command
             if (command.equals("exit") || command.equals("echo") || command.equals("type")) {
-                System.out.println(command.substring(4) + " is a shell builtin");
+                System.out.println(command + " is a shell builtin");
             }
 
             //if the command doesn't equal a builtin command
             else {
-                System.out.println(command.substring(4) + ": not found");
+                System.out.println(command + ": not found");
             }
         }
      }
