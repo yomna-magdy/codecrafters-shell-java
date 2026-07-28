@@ -8,7 +8,15 @@ public class Main {
      while(true){
 
         System.out.print("$ ");
-        String command = scanner.nextLine();
+        String input = scanner.nextLine();
+
+         if(input.indexOf(" ") == -1){
+             String command = input;
+         }
+         else {
+             String command = input.Substring(0,input.indexOf(""));
+         }
+
 
         //exit builtin code
         if (command.equals("exit")){
@@ -22,18 +30,18 @@ public class Main {
 
 
         //type built in code
-        else if (command.startsWith("type")) {
+        else if (input.startsWith("type")) {
 
             //if the command equals to a builtin command
-            if (command.equals("type exit") || command.equals("type echo") || command.equals("type type")) {
+            if (command.equals("exit") || command.equals("echo") || command.equals("type")) {
                 System.out.println(command.substring(5) + " is a shell builtin");
             }
-        }
-            //if the command doesn't equal a builtin command
-        else {
-                System.out.println(command.substring(5) + " command not found");
-            }
 
+            //if the command doesn't equal a builtin command
+            else {
+                System.out.println(command.substring(5) + ": not found");
+            }
+        }
      }
     }
 }
