@@ -20,7 +20,7 @@ public class Main {
 
 
         //exit builtin code
-        if (command.equals("exit")){
+        if (input.equals("exit")){
         break;
         }
 
