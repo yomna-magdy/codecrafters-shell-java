@@ -9,12 +9,13 @@ public class Main {
 
         System.out.print("$ ");
         String input = scanner.nextLine();
+        String command;
 
          if(input.indexOf(" ") == -1){
-             String command = input;
+             command = input;
          }
          else {
-             String command = input.substring(0,input.indexOf(""));
+             command = input.substring(0, input.indexOf(" "));
          }
 
 
