@@ -30,7 +30,7 @@ public class Main {
 
             //if the command doesn't equal a builtin command
             else {
-                System.out.println(command.substring(5) + " command not found");
+                System.out.println(command.substring(5) + ": not found");
             }
         }
      }
